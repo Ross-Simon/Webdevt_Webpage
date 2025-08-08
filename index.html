@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fas fa-code"></i> My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <h1>My Portfolio</h1>
+            <p>Hey there! I'm Ross, an aspiring web developer aiming to create smooth digital experiences.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <h2 class="section-title">My Top 3 Projects</h2>
+            <div class="row">
+                <!-- Project 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card project-card">
+                        <img src="C:\Users\Ross\Documents\My Personal Portfolio\SereneScribe.png" alt="SereneScribe" class="project-img">
+                        <div class="card-body">
+                            <h3 class="project-title" onclick="changeBackground(1)">SereneScribe</h3>
+                            <p class="project-description">A versatile and unique note taking app for optimizing productivity.</p>
+                            <button class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#project1Modal">
+                                View Details <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card project-card">
+                        <img src="C:\Users\Ross\Documents\My Personal Portfolio\CyParent.png" alt="CyParent" class="project-img">
+                        <div class="card-body">
+                            <h3 class="project-title" onclick="changeBackground(2)">CyParent</h3>
+                            <p class="project-description">A Parental Management and Control App for managing children's digital activity.</p>
+                            <button class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#project2Modal">
+                                View Details <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card project-card">
+                        <img src="C:\Users\Ross\Documents\My Personal Portfolio\LLL_Presidency.png" alt="LLL_Presidency" class="project-img">
+                        <div class="card-body">
+                            <h3 class="project-title" onclick="changeBackground(3)">Organization Presidency</h3>
+                            <p class="project-description">A Digital Graphic Design that initiated my presidency in De La Salle Lipa's organization for scholars.</p>
+                            <button class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#project3Modal">
+                                View Details <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modals -->
+    <!-- Modal 1 -->
+    <div class="modal fade" id="project1Modal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">SereneScribe</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="C:\Users\Ross\Documents\My Personal Portfolio\SereneScribe.png" alt="SereneScribe" class="img-fluid mb-3">
+                    <h6>Technologies Used</h6>
+                <ul>
+                    <li>Frontend: React.js, Redux, Material-UI</li>
+                    <li>Backend: Python, Django REST Framework</li>
+                    <li>Database: PostgreSQL</li>
+                    <li>Real-time: WebSocket</li>
+                </ul>
+                
+                <h6>Key Features</h6>
+                <ul>
+                    <li>Real-time collaboration</li>
+                    <li>Drag-and-drop task organization</li>
+                    <li>Team member assignment</li>
+                    <li>Progress tracking and reporting</li>
+                    <li>Deadline notifications</li>
+                </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="project2Modal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">CyParent</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="C:\Users\Ross\Documents\My Personal Portfolio\CyParent.png" alt="CyParent" class="img-fluid mb-3">
+                    <h6>Project Overview</h6>
+                    <p>CyParent is a parental management and control application designed to help parents monitor and manage their children's digital activity effectively.</p>
+                
+                <h6>Technologies Used</h6>
+                <ul>
+                    <li>Frontend: React.js, Redux, Material-UI</li>
+                    <li>Backend: Python, Django REST Framework</li>
+                    <li>Database: PostgreSQL</li>
+                    <li>Real-time: WebSocket</li>
+                </ul>
+                
+                <h6>Key Features</h6>
+                <ul>
+                    <li>Real-time monitoring of digital activity</li>
+                    <li>Content filtering and blocking capabilities</li>
+                    <li>Usage reporting and analytics</li>
+                    <li>Time management tools</li>
+                    <li>Alerts and notifications for suspicious activities</li>
+                </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="project3Modal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Organization Presidency</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="C:\Users\Ross\Documents\My Personal Portfolio\LLL_Presidency.png" alt="LLL_Presidency" class="img-fluid mb-3">
+                    <h6>Project Overview</h6>
+                    <p>This project showcases the digital graphic design and application planning that initiated my presidency in De La Salle Lipa's organization for scholars.</p>
+                
+                <h6>Technologies Used</h6>
+                <ul>
+                    <li>Design Tools: Canva, Adobe Photoshop</li>
+                </ul>
+                
+                <h6>Key Features</h6>
+                <ul>
+                    <li>Engaging visual design for promotional materials</li>
+                    <li>Effective communication strategies to engage members</li>
+                    <li>Collaboration with team members for project success</li>
+                </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Send a Message</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form id="contactForm" onsubmit="handleFormSubmit(event)">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="firstName" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="subject" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-custom btn-lg">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
